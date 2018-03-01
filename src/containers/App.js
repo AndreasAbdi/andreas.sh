@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Container, Row, Col, Button} from 'reactstrap';
 
@@ -11,16 +10,13 @@ class App extends React.Component {
                     fluid={true}>
                     <Row>
                         <Col>
-                            <header className="App-header">
-                                <img src={logo} className="App-logo" alt="logo" />
-                                <h1 className="App-title">Welcome to React</h1>
-                            </header>
+
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <p className="App-intro">
-                            To get started, edit <code>src/App.js</code> and save to reload.
+                                This is some text
                             </p>
                         </Col>
                         <Col>
