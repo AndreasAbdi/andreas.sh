@@ -1,19 +1,18 @@
 import React from 'react';
 import './App.css';
-import {Row, Col} from 'reactstrap';
-import ResumeSection from 'components/ResumeSection.js';
-import ResumeSectionHeader from 'components/ResumeSectionHeader.js';
-import ResumeDetail from 'components/ResumeDetail.js';
 import Header from 'containers/Header.js';
 import Body from 'containers/Body.js';
 
 class App extends React.Component {
     render() {
         let menuDetails = [{
-            title: 'some first text',
+            title: 'HOME',
             command: () => {}
         }, {
-            title: 'some second text',
+            title: 'PROJECTS',
+            command: () => {}
+        }, {
+            title: 'RESUME',
             command: () => {}
         }];
         let details = [{
@@ -38,9 +37,9 @@ class App extends React.Component {
                 <Header 
                     menuDetails = {menuDetails}
                 />
-                <Body 
+                {/* <Body 
                     sectionDetails = {sectionDetails}
-                />
+                /> */}
             </div>
         );
     }

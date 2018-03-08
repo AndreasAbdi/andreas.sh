@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import {Container, Row, Col} from 'reactstrap';
 import MenuElement from 'components/MenuElement.js';
+import MenuImage from 'components/MenuImage.js';
+import MenuBar from 'components/MenuBar.js';
 
+import 'components/Menu.css';
 
 class Menu extends React.Component {
     constructor(props) {
@@ -20,8 +23,23 @@ class Menu extends React.Component {
                 />));
         }
         return (
-            <div className="menu"> 
-                {menuElements}
+            <div className="menu">
+                <Container
+                    fluid={true}
+                >
+                    <Row
+                        noGutters={true}
+                    >
+                        <Col xs='2'>
+                            <MenuImage />
+                        </Col>
+                        <Col xs='10'>
+                            <MenuBar 
+                                details = {this.props.details}
+                            />
+                        </Col>
+                    </Row>
+                </Container> 
             </div>
         );
     }

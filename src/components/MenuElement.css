@@ -1,0 +1,12 @@
+.menu-element {
+    background-color: transparent;
+    border: none;
+    padding: 0 0 0 0;
+    font-size: 2vw;
+    font-weight: bold;
+    height: inherit;
+    margin: 0 1vh 0 1vh;
+    color: black;
+    width: 25%;
+    float: left;
+}

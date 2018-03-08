@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5vh;
+    height: 10vh;
+    width: inherit;
+}
+
+.menu .container-fluid {
+    padding: 0;
+    height: inherit;
+}
+
+.menu .col {
+    padding: 0 0 0 0;
+}
+.menu .row {
+    height: inherit;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}

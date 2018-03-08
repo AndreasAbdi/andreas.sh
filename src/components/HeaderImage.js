@@ -1,4 +1,7 @@
 import React from 'react';
+import logo from 'resources/logo.png';
+
+import 'components/HeaderImage.css';
 
 //todo: weird image on left
 class HeaderImage extends React.Component {
@@ -9,7 +12,7 @@ class HeaderImage extends React.Component {
     render() {
         return (
             <div className="header-image">
-                {'Hello this is the header element'}
+                <img src={logo} alt={'logo'} />
             </div>
         );
     }

@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import 'components/MenuElement.css';
+
 class MenuElement extends React.Component {
     constructor(props) {
         super(props);
