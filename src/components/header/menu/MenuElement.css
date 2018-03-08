@@ -10,7 +10,10 @@
     float: left;
 }
 
-.header-name {
-    color: white;
+.menu-element .text-elem {
+    float: left;
 }
 
+.menu-element .numeric {
+    color: red;
+}

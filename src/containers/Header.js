@@ -3,7 +3,7 @@ import {Container, Col, Row} from 'reactstrap';
 import Menu from 'components/header/menu/Menu.js';
 import HeaderImage from 'components/header/HeaderImage.js';
 import PropTypes from 'prop-types';
-
+import Rings from 'resources/rings.png';
 import 'containers/header.css';
 
 class Header extends React.Component {
@@ -12,8 +12,15 @@ class Header extends React.Component {
     }
 
     render() {
+        var headerStyle = {
+            backgroundImage: 'url(' + Rings + ')',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '140% 80%',
+            backgroundSize: '40vw 40vh',
+        };
+
         return (
-            <div className="header">
+            <div className="header" >
                 <Container
                     fluid={true}
                 >
@@ -23,7 +30,7 @@ class Header extends React.Component {
                         <Col xs='5'>
                             <HeaderImage />
                         </Col>
-                        <Col xs='7'>
+                        <Col xs='7' style={headerStyle}>
                             <Menu 
                                 details={this.props.menuDetails}
                             />

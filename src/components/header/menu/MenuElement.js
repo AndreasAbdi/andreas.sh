@@ -10,9 +10,23 @@ class MenuElement extends React.Component {
     }
 
     render() {
+        let textElements = [];
+        if(this.props.title) {
+            textElements = this.props.title
+                .split(/(\d+)/)
+                .filter(Boolean)
+                .map((v, k) => {
+                    if(v.match(/[0-9]+/)) {
+                        return (<div className='text-elem numeric'>{v}</div>);
+                    }
+                    if(v.match(/[a-zA-Z]+/)) {
+                        return (<div className='text-elem alphabet'>{v}</div>);
+                    }
+                });
+        }
         return (
             <button className="menu-element" onClick={this.props.command}>
-                {this.props.title}
+                {textElements}
             </button>
         );
     }

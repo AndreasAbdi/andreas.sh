@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Container, Row, Col} from 'reactstrap';
-import MenuElement from 'components/header/menu/MenuElement.js';
 import MenuImage from 'components/header/menu/MenuImage.js';
 import MenuBar from 'components/header/menu/MenuBar.js';
 
@@ -13,15 +12,6 @@ class Menu extends React.Component {
     }
 
     render() {
-        let menuElements = null;        
-        if(this.props.details) {
-            menuElements = this.props.details
-                .map((v, k) => (<MenuElement 
-                    key={k} 
-                    title={v.title}
-                    command={v.command}
-                />));
-        }
         return (
             <div className="menu">
                 <Container

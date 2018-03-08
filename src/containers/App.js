@@ -6,13 +6,13 @@ import Body from 'containers/Body.js';
 class App extends React.Component {
     render() {
         let menuDetails = [{
-            title: 'HOME',
+            title: 'HOM3',
             command: () => {}
         }, {
-            title: 'PROJECTS',
+            title: 'PROJ3CTS',
             command: () => {}
         }, {
-            title: 'RESUME',
+            title: 'RESUM3',
             command: () => {}
         }];
         let details = [{
