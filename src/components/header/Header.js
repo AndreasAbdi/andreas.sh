@@ -4,7 +4,7 @@ import Menu from 'components/header/menu/Menu.js';
 import HeaderImage from 'components/header/HeaderImage.js';
 import PropTypes from 'prop-types';
 import Rings from 'resources/rings.png';
-import 'containers/header.css';
+import 'components/header/header.css';
 
 class Header extends React.Component {
     constructor(props) {

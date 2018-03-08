@@ -1,0 +1,7 @@
+.info .list-group-item {
+    background-color: transparent;
+    text-align: left;
+    color: white;
+    padding: 1vh 0vw 1vh 5vw;
+    font-size: 3vw;
+}

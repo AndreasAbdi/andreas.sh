@@ -1,14 +1,10 @@
 import React from 'react';
-import {Col, Row} from 'reactstrap';
-import ResumeSection from 'components/body/resume/ResumeSection.js';
-
 import PropTypes from 'prop-types';
+import ResumeSection from 'components/body/resume/ResumeSection.js';
+import 'components/body/resume/ResumeDetail.css';
 
-//todo
-class Body extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+class Resume extends React.Component {
+
 
     render() {
         let sectionDetails = null;
@@ -23,23 +19,17 @@ class Body extends React.Component {
                 )
                 );
         }
-
         return (
-            <div className="body">
-                <Row>
-                    <Col>
-                        <div>
-                            {'Hello this is the body'}
-                        </div>
-                        {sectionDetails}
-                    </Col>
-                </Row>
+            <div className="resume">
+                {sectionDetails}
             </div>
         );
     }
 }
 
-Body.propTypes = {
+
+
+Resume.propTypes = {
     sectionDetails: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string,
         details: PropTypes.arrayOf(PropTypes.shape({
@@ -52,4 +42,4 @@ Body.propTypes = {
     }))
 };
 
-export default Body;
+export default Resume;

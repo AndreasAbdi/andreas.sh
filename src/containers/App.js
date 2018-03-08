@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from 'containers/Header.js';
-import Body from 'containers/Body.js';
+import Header from 'components/header/Header.js';
+import Body from 'components/body/Body.js';
 
 class App extends React.Component {
     render() {
@@ -32,14 +32,16 @@ class App extends React.Component {
             title: 'section header',
             details: details
         }];
+        let displayType = 'info';
         return (
             <div className="app">
                 <Header 
                     menuDetails = {menuDetails}
                 />
-                {/* <Body 
+                <Body 
+                    displayType = {displayType}
                     sectionDetails = {sectionDetails}
-                /> */}
+                />
             </div>
         );
     }
