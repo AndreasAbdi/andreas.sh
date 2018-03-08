@@ -2,11 +2,15 @@
     background-color: transparent;
     border: none;
     padding: 0 0 0 0;
-    font-size: 2vw;
+    font-size: 3.5vw;
     font-weight: bold;
     height: inherit;
-    margin: 0 1vh 0 1vh;
+    margin: 0 0 0 2vw;
     color: black;
-    width: 25%;
     float: left;
 }
+
+.header-name {
+    color: white;
+}
+

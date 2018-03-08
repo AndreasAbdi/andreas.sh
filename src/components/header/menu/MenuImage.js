@@ -1,7 +1,7 @@
 import React from 'react';
 import Halftone from 'resources/halftone.png';
 
-import 'components/MenuImage.css';
+import 'components/header/menu/MenuImage.css';
 
 class MenuImage extends React.Component {
     render() {

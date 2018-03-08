@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import 'components/ResumeSectionHeader.css';
+import 'components/body/resume/ResumeSectionHeader.css';
 
 class ResumeSectionHeader extends React.Component {
     constructor(props) {

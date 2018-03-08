@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ResumeSectionHeader from 'components/ResumeSectionHeader.js';
-import ResumeDetail from 'components/ResumeDetail.js';
+import ResumeSectionHeader from 'components/body/resume/ResumeSectionHeader.js';
+import ResumeDetail from 'components/body/resume/ResumeDetail.js';
 
-import 'components/ResumeSection.css';
+import 'components/body/resume/ResumeSection.css';
 
 
 class ResumeSection extends React.Component {

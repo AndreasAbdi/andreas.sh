@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Container, Row, Col} from 'reactstrap';
-import MenuElement from 'components/MenuElement.js';
-import MenuImage from 'components/MenuImage.js';
-import MenuBar from 'components/MenuBar.js';
+import MenuElement from 'components/header/menu/MenuElement.js';
+import MenuImage from 'components/header/menu/MenuImage.js';
+import MenuBar from 'components/header/menu/MenuBar.js';
 
-import 'components/Menu.css';
+import 'components/header/menu/Menu.css';
 
 class Menu extends React.Component {
     constructor(props) {

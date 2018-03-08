@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Col, Row} from 'reactstrap';
-import Menu from 'components/Menu.js';
-import HeaderImage from 'components/HeaderImage.js';
+import Menu from 'components/header/menu/Menu.js';
+import HeaderImage from 'components/header/HeaderImage.js';
 import PropTypes from 'prop-types';
 
 import 'containers/header.css';

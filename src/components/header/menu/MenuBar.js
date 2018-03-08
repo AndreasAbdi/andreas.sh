@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MenuElement from 'components/MenuElement.js';
+import MenuElement from 'components/header/menu/MenuElement.js';
 
-import 'components/MenuBar.css';
+import 'components/header/menu/MenuBar.css';
 
 class MenuBar extends React.Component {
     constructor(props) {

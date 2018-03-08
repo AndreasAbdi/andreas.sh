@@ -1,0 +1,10 @@
+.header-image {
+    height: 20vh;
+}
+
+.header-image img {
+    height: 20vh;
+    width: 20vh;
+    float: left;
+    margin: 0 0 0 10vw;
+}

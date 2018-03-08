@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import 'components/ResumeDetail.css';
+import 'components/body/resume/ResumeDetail.css';
 
 class ResumeDetail extends React.Component {
     constructor(props) {

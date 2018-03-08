@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Row} from 'reactstrap';
-import ResumeSection from 'components/ResumeSection.js';
+import ResumeSection from 'components/body/resume/ResumeSection.js';
 
 import PropTypes from 'prop-types';
 
