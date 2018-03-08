@@ -6,5 +6,8 @@
     height: 20vh;
     width: 20vh;
     float: left;
-    margin: 0 0 0 5vw;
+    margin: 0 0 0 1vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
