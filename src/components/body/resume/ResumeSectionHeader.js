@@ -1,26 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import 'components/body/resume/ResumeSectionHeader.css';
+import 'components/body/resume/TimeRange.css';
 
-class ResumeSectionHeader extends React.Component {
+class TimeRange extends React.Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div className="resume-header">{this.props.title}</div>
+            <h2 className="resume-section-header">
+                {this.props.title}
+            </h2>
         );
     }
 }
 
-ResumeSectionHeader.defaultProps = {
+TimeRange.defaultProps = {
     title: 'default header'
 };
 
-ResumeSectionHeader.propTypes = {
+TimeRange.propTypes = {
     title: PropTypes.string
 };
 
-export default ResumeSectionHeader;
+export default TimeRange;

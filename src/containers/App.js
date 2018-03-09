@@ -32,7 +32,8 @@ class App extends React.Component {
             title: 'section header',
             details: details
         }];
-        let displayType = 'info';
+        let displayType = 'resume';
+        //let displayType = 'info';
         return (
             <div className="app">
                 <Header 

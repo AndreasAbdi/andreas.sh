@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import TimeRange from 'components/body/resume/TimeRange.js';
 import 'components/body/resume/ResumeDetail.css';
 
 class ResumeDetail extends React.Component {
@@ -9,22 +9,24 @@ class ResumeDetail extends React.Component {
     }
 
     render() {
-        let title = null;   
-        if (this.props.workPosition) {
-            title = <li>props.workPosition</li>;
-        }
         let infoListItems = this.props.info
-            .map((v, k) => (<li key={k}>{v}</li>));
-        let infoList = (<ol>{infoListItems}</ol>);
+            .map((v, k) => (<li className='resume-detail-info-elem' key={k}>{v}</li>));
+        let infoList = (<ul className='resume-detail-info'>{infoListItems}</ul>);
 
         return (
-            <div className="resume-detail">
-                <ul>
-                    <li>{this.props.header}</li>
-                    <li>{this.props.startDate.toDateString()}</li>
-                    <li>{this.props.endDate.toDateString()}</li>
-                    {title}
-                </ul>
+            <div className='resume-detail'>
+                <h4 className='resume-detail-header'>
+                    {this.props.header}
+                </h4>
+                <div className='resume-detail-general'>
+                    <div className='position'>
+                        {this.props.workPosition}
+                    </div>
+                    <TimeRange
+                        startDate={this.props.startDate}
+                        endDate={this.props.endDate}
+                    />
+                </div>
                 {infoList}
             </div>
         );

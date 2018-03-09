@@ -22,9 +22,11 @@ class Body extends React.Component {
             );
         }
 
-        if (this.props.displayType == 'display') {
+        if (this.props.displayType == 'resume') {
             display = (
-                <Resume />
+                <Resume 
+                    sectionDetails={this.props.sectionDetails}
+                />
             );
         }
         return (

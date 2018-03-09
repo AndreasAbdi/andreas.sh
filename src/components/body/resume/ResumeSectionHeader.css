@@ -1,2 +1,6 @@
-.resume-section {
+.resume-section-header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 0px 0px 0px 3vw;
 }

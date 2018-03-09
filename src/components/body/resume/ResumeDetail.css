@@ -1,0 +1,29 @@
+.resume-detail {
+    text-align: left;
+    margin: 0 1vw 1vh 1vw;
+    padding: 0 0 5vh 0;
+    border-bottom: 1px white dashed;
+}
+
+.resume-detail-header {
+    padding: 0 0 0 2vw;
+    font-weight: bold;
+}
+
+.resume-detail-general {
+    padding: 0 0 2vh 2vw;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: grey;
+    justify-content: space-between;
+}
+
+.resume-detail-info {
+    margin: 0 0 0 2vw;
+    padding: 0 0 0 2vw;
+    font-size: 1em;
+    color: #737373;
+    list-style-type: square;
+}

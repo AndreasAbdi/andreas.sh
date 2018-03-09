@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ResumeSection from 'components/body/resume/ResumeSection.js';
-import 'components/body/resume/ResumeDetail.css';
+import 'components/body/resume/Resume.css';
 
 class Resume extends React.Component {
-
-
     render() {
         let sectionDetails = null;
         if (this.props.sectionDetails) {
@@ -26,8 +24,6 @@ class Resume extends React.Component {
         );
     }
 }
-
-
 
 Resume.propTypes = {
     sectionDetails: PropTypes.arrayOf(PropTypes.shape({
