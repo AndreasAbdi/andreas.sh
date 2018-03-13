@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import Info from 'components/body/info/Info.js';
 import Resume from 'components/body/resume/Resume.js';
 
+import {Route, Switch} from 'react-router-dom';
+
 import 'components/body/Body.css';
 
 class Body extends React.Component {
@@ -14,21 +16,6 @@ class Body extends React.Component {
     }
 
     render() {
-
-        let display = null;
-        if (this.props.displayType == 'info') {
-            display = (
-                <Info />
-            );
-        }
-
-        if (this.props.displayType == 'resume') {
-            display = (
-                <Resume 
-                    sectionDetails={this.props.sectionDetails}
-                />
-            );
-        }
         return (
             <div className="body">
                 <Container
@@ -47,7 +34,37 @@ class Body extends React.Component {
                         className='data'
                     >
                         <Col>
-                            {display}
+                            <Switch>
+                                <Route 
+                                    path='/home' 
+                                    render={() => (
+                                        <Info />
+                                    )} 
+                                />
+                                <Route 
+                                    path='/projects' 
+                                    render={() => (
+                                        <h1>
+                                            WIP
+                                        </h1>
+                                    )} 
+                                />
+                                <Route 
+                                    path='/resume' 
+                                    render={() => (
+                                        <Resume 
+                                            sectionDetails={this.props.sectionDetails}
+                                        />
+                                    )} 
+                                />
+                                <Route
+                                    render = { () => (
+                                        <h1>
+                                            Hi, this page cannot be found. 
+                                        </h1>
+                                    )}
+                                />
+                            </Switch>
                         </Col>
                     </Row>
                 </Container>

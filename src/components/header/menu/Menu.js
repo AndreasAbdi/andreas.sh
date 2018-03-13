@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Container, Row, Col} from 'reactstrap';
 import MenuImage from 'components/header/menu/MenuImage.js';
 import MenuBar from 'components/header/menu/MenuBar.js';
-
+import {menuButton} from 'types/Types.js';
 import 'components/header/menu/Menu.css';
 
 class Menu extends React.Component {
@@ -36,10 +36,7 @@ class Menu extends React.Component {
 }
 
 Menu.propTypes = {
-    details: PropTypes.arrayOf(PropTypes.shape({
-        title: PropTypes.string,
-        command: PropTypes.arrayOf(PropTypes.func.isRequired)
-    }))
+    details: PropTypes.arrayOf(menuButton)
 };
 
 export default Menu;

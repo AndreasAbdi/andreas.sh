@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuElement from 'components/header/menu/MenuElement.js';
+import {menuButton} from 'types/Types.js';
 
 import 'components/header/menu/MenuBar.css';
 
@@ -16,7 +17,7 @@ class MenuBar extends React.Component {
                 .map((v, k) => (<MenuElement 
                     key={k} 
                     title={v.title}
-                    command={v.command}
+                    target={v.target}
                 />));
         }
         return (
@@ -28,10 +29,7 @@ class MenuBar extends React.Component {
 }
 
 MenuBar.propTypes = {
-    details: PropTypes.arrayOf(PropTypes.shape({
-        title: PropTypes.string,
-        command: PropTypes.arrayOf(PropTypes.func.isRequired)
-    }))
+    details: PropTypes.arrayOf(menuButton)
 };
 
 export default MenuBar;

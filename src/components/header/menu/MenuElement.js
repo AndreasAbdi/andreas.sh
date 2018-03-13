@@ -1,6 +1,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import {menuButton} from 'types/Types.js';
+import {NavLink} from 'react-router-dom';
 
 import 'components/header/menu/MenuElement.css';
 
@@ -25,21 +27,18 @@ class MenuElement extends React.Component {
                 });
         }
         return (
-            <button className="menu-element" onClick={this.props.command}>
+            <NavLink className="menu-element" to={this.props.target}>
                 {textElements}
-            </button>
+            </NavLink>
         );
     }
 }
 
 MenuElement.defaultProps = {
     title: 'unassigned name for button',
-    command: () => {}
+    target: '/home'
 };
 
-MenuElement.propTypes = {
-    title: PropTypes.string,
-    command: PropTypes.funct
-};
+MenuElement.propTypes = menuButton;
 
 export default MenuElement;
